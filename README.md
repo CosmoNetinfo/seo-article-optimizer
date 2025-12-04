@@ -1,4 +1,4 @@
-# SEO Article Optimizer 4.1
+# SEO Article Optimizer Beta 4.1
 
 <div align="center">
 
