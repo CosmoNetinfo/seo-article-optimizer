@@ -27,7 +27,7 @@ build
 # Portable builds (too large for git)
 *.zip
 *-Portable/
-SEO-Article-Optimizer-*/
+SEO-Article-Optimizer-*-Portable/
 
 # Cache directories
 .cache
@@ -55,4 +55,4 @@ build_log.txt
 # Backup files
 *-backup.*
 *.bak
-seo-article-optimizer/
+
