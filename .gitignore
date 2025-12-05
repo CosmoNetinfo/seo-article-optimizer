@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+dist-electron
+dist-packager
+build
+
+# Environment files (contains API keys)
+*.local
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# Portable builds (too large for git)
+*.zip
+*-Portable/
+SEO-Article-Optimizer-*/
+
+# Cache directories
+.cache
+.next
+.turbo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Build logs
+build_log.txt
+
+# Backup files
+*-backup.*
+*.bak
+seo-article-optimizer/

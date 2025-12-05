@@ -1,0 +1,82 @@
+{
+  "name": "seo-article-optimizer",
+  "productName": "SEO Article Optimizer",
+  "version": "4.1.0",
+  "author": "Daniele Spalletti <info@cosmonet.info> (https://cosmonet.info)",
+  "description": "Ottimizza i tuoi articoli per la SEO con l'intelligenza artificiale senza riscriverli o accorciarli",
+  "main": "electron/main.cjs",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CosmoNetInfo/seo-article-optimizer.git"
+  },
+  "homepage": "https://github.com/CosmoNetInfo/seo-article-optimizer#readme",
+  "bugs": {
+    "url": "https://github.com/CosmoNetInfo/seo-article-optimizer/issues",
+    "email": "info@cosmonet.info"
+  },
+  "keywords": [
+    "seo",
+    "optimization",
+    "ai",
+    "groq",
+    "content",
+    "wordpress",
+    "electron",
+    "nextjs",
+    "typescript",
+    "react"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && cross-env ELECTRON_START_URL=http://localhost:3000 electron .\"",
+    "electron:build": "npm run build && electron-builder",
+    "electron:pack": "npm run build && electron-builder --dir"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.37.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.22",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.seooptimizer.app",
+    "productName": "SEO Article Optimizer",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png",
+      "sign": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
